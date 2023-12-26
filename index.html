@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="calculator" class="container">
+    <h2>Rent Calculator</h2>
+    <form id="calculatorForm">
+        <label for="rent">Rent:</label>
+        <input type="number" id="rent" class="input" required>
+
+        <label for="food">Food Expense:</label>
+        <input type="number" id="food" class="input" required>
+
+        <label for="electricitySpend">Electricity Expenditure:</label>
+        <input type="number" id="electricitySpend" class="input" required>
+
+        <label for="chargePerUnit">Charge per Unit:</label>
+        <input type="number" id="chargePerUnit" class="input" required>
+
+        <label for="persons">Number of Persons:</label>
+        <input type="number" id="persons" class="input" required>
+
+        <button type="button" onclick="calculateRent()" class="btn" id="performBtn">Calculate</button>
+    </form>
+
+    <div id="result" class="result"></div>
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>
